@@ -18,9 +18,50 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/small"
         android:id="@+id/title"
         android:textColor="#FFFFFF"
         android:text="Nombre Pelicula"
+        style="@style/Base.TextAppearance.AppCompat.Display1"
         android:layout_alignBottom="@id/img"/>
+
+    <ImageView
+        android:id="@+id/icon_time"
+        android:layout_width="@dimen/icon_size"
+        android:layout_height="@dimen/icon_size"
+        android:src="@drawable/ic_alarm"
+        android:layout_below="@id/img"
+        android:layout_margin="@dimen/small"/>
+    <TextView
+        android:id="@+id/txt_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Base.TextAppearance.AppCompat.Body1"
+        android:text="1:15:00"
+        android:layout_below="@id/img"
+        android:layout_alignBottom="@id/icon_time"
+        android:layout_alignTop="@id/icon_time"
+        android:gravity="center_vertical"
+        android:layout_toRightOf="@id/icon_time"/>
+
+    <ImageView
+        android:id="@+id/icon_star"
+        android:layout_width="@dimen/icon_size"
+        android:layout_height="@dimen/icon_size"
+        android:src="@drawable/ic_star"
+        android:layout_below="@id/icon_time"
+        android:layout_margin="@dimen/small"/>
+    <TextView
+        android:id="@+id/txt_star"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Base.TextAppearance.AppCompat.Body1"
+        android:text="7,8"
+        android:layout_below="@id/txt_time"
+        android:layout_alignBottom="@id/icon_star"
+        android:layout_alignTop="@id/icon_star"
+        android:gravity="center_vertical"
+        android:layout_toRightOf="@id/icon_time"/>
+
 
 </RelativeLayout>
