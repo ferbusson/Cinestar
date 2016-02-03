@@ -19,7 +19,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingLeft="@dimen/small"
-        android:id="@+id/title"
+        android:id="@+id/tittle_movie"
         android:textColor="#FFFFFF"
         android:text="Nombre Pelicula"
         style="@style/Base.TextAppearance.AppCompat.Display1"
